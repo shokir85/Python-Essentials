@@ -68,7 +68,7 @@ class SLL:
         return self.head is None  # self.head == None
 
     def add_front(self, new_data):
-        
+        """ Add a node whose data is the new_data argument to the front of the Linked List."""
         temp = SLLNode(new_data)
         temp.set_next(self.head)
         self.head = temp

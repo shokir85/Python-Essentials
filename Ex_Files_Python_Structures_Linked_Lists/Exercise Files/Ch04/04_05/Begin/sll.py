@@ -112,8 +112,9 @@ class SLL:
         pass
 
 sll = SLL()
-print(sll.search(3))
+print(sll.search(3)) # SLL is empty
 
+# adding Nodes from fron
 sll.add_front(1)
 sll.add_front(4)
 sll.add_front(6)

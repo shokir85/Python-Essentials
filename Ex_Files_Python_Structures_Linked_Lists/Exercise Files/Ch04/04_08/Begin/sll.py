@@ -120,7 +120,6 @@ class SLL:
         """
         if self.head is None:
             return "Linked List is empty. No Nodes to remove."
-
         current = self.head
         previous = None
         found = False
@@ -133,7 +132,6 @@ class SLL:
                 else:
                     previous = current
                     current = current.get_next()
-
         if previous is None:
             self.head = current.get_next()
         else:
