@@ -34,18 +34,18 @@ def max_pairwise_prod_fast(numbers):
 def randlist(lim):
     numlst = []
     for i in range(lim):
-        numlst.append(random.randrange(10000000))
+        numlst.append(random.randrange(1000))
     return numlst
 
 #stress test:
 while True:
-    numberlist = randlist(1000)
-    print(numberlist)
+    numberlist = randlist(10)
+    #print(numberlist)
     res1 = max_pairwise_product(numberlist)
     res2 = max_pairwise_prod_fast(numberlist)
     if res1 != res2:
         print("wrong answer", res1, " ", res2)
-        print(numberlist)
+        #print(numberlist)
         break
     else:
         print("OK")
