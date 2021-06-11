@@ -10,7 +10,8 @@ def gcd_naive(a, b):
 
     return current_gcd
 
-if __name__ == "__main__":
-    input = sys.stdin.read()
-    a, b = map(int, input.split())
-    print(gcd_naive(a, b))
+print(gcd_naive(1344,217))
+# if __name__ == "__main__":
+#     input = sys.stdin.read()
+#     a, b = map(int, input.split())
+#     print(gcd_naive(a, b))
